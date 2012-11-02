@@ -1,6 +1,6 @@
 JavaScript for .NET Developers
 ===============================
-Code in support of an introductory talk to .NET developers on what to expect when developing .NET client apps.
+Code in support of an introductory talk to .NET developers on what to expect when developing JavaScript client apps.
 
 The PowerPoint slide deck is from a talk I gave at the Fall 2012 Dev Connections. 
 
