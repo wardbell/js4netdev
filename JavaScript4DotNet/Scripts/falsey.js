@@ -19,6 +19,8 @@
         show((0 / 0), '(0 / 0)'); //NaN
 
 
+        log("** PAUSE **"); /* PAUSE HERE
+
         log("*** truth-y ***");
    
         // Everything else is truth-y
@@ -51,8 +53,6 @@
         // Number.isNaN(1 / 0)  is NaN = Not a number
         show(NaN !== NaN, 'NaN !== NaN');
         show(NaN === NaN, 'NaN === NaN');
-
-        log("** PAUSE **"); /* PAUSE HERE
 
         */
 }
