@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS 4 DotNet</title>
+    <link rel="stylesheet" href="/Content/styles.css" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<!--3rd party libraries-->
+​<script src="Scripts/lib/jquery-1.8.2.min.js"></script>
+<script src="Scripts/lib/knockout-2.1.0.js"></script>
+
+
+ <!-- View -->
+<p>Input Name: <input data-bind="value: name, valueUpdate: 'afterkeydown'" /></p>
+<p>Output Name: <span data-bind="text: name"></span></p>
+
+ <!-- ViewModel -->
+<script>
+// Here's my data model
+var viewModel = {
+    name: ko.observable("Ward"),
+};
+
+// This makes Knockout get to work
+ko.applyBindings(viewModel);
+</script>
+
+</body> 
+</html>

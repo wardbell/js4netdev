@@ -1,0 +1,16 @@
+﻿#module {
+     background-color: lightblue;
+     border-bottom:thin;
+     font-size: 18px;   
+ }
+.hide {
+     display: none;
+}
+body {
+    font-family: arial;
+    font-size: 24px;
+}
+p {  
+    margin-bottom: .5em;
+}​
+

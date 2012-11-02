@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS 4 DotNet</title>
+    <link rel="stylesheet" href="/Content/styles.css" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<!--3rd party libraries-->
+​<script src="Scripts/lib/jquery-1.8.2.min.js"></script>
+<script src="Scripts/lib/knockout-2.1.0.js"></script>
+
+
+ <!-- View -->
+<p>FirstName: <input data-bind="value: firstName, valueUpdate: 'afterkeydown'" /></p> 
+<p>LastName: <input data-bind="value: lastName, valueUpdate: 'afterkeydown'" /></p> 
+<p>FullName: <strong data-bind='text: fullName' ></strong> 
+
+<!-- ViewModel -->
+<script>
+// Here's my data model
+var viewModel = {
+    firstName: ko.observable("Sky"),
+    lastName: ko.observable("King"),
+};
+
+viewModel.fullName = ko.computed(function () {
+    // Knockout tracks dependencies automatically. 
+    //It knows that fullName depends on firstName and lastName, 
+    // because these get called when evaluating fullName.
+    return viewModel.firstName() + " " + viewModel.lastName();
+});
+
+
+// This makes Knockout get to work
+ko.applyBindings(viewModel);
+</script>
+
+</body> 
+</html>

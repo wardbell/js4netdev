@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS 4 DotNet Devs</title>
+    <link rel="stylesheet" href="/Content/styles.css" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div id="module">
+        <label>Module: </label>
+        <select id="modules">
+            <option id="mod0">Select a module</option>
+        </select>
+    </div>
+ 
+    <!-- message displays -->
+    <div id="msg"></div>
+       
+    <!-- Modularity demo -->
+    <div id="modularityDemo" class="hide">
+        <ul id="anchorList"> </ul>​
+        <div id="modularityLog"></div>
+    </div>
+
+    <!-- Namespace polution demo -->
+    <div id="namespaceDemo" class="hide"></div>
+
+    <!--3rd party libraries-->
+    ​<script src="Scripts/lib/jquery-1.8.2.min.js"></script>
+    <script src="Scripts/lib/knockout-2.1.0.js"></script>
+    <script src="Scripts/lib/q.js"></script>
+    <script src="Scripts/lib/moment.js"></script>
+
+    <!--App scripts-->
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/loose_typing.js"></script>
+    <script src="Scripts/duck_typing.js"></script>
+    <script src="Scripts/object_hashes.js"></script>
+    <script src="Scripts/arrays.js"></script>
+    <script src="Scripts/falsey.js"></script>
+    <script src="Scripts/crazy_AND.js"></script>
+    <script src="Scripts/namespaces.js"></script>
+    <script src="Scripts/variable_hoisting.js"></script>
+    <script src="Scripts/module_oldschool.js"></script>
+    <script src="Scripts/module_singleton.js"></script>
+    <script src="Scripts/module_iife.js"></script>
+    <script src="Scripts/module_revealing.js"></script>
+
+    <script>app.restoreModuleFromBookmark();</script>
+</body> 
+</html>
