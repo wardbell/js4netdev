@@ -59,8 +59,24 @@
   <ItemGroup>
     <Content Include="Content\styles.css" />
     <Content Include="basicKo.html" />
+    <TypeScriptCompile Include="Scripts\animals.ts" />
+    <Content Include="Scripts\animals.js">
+      <DependentUpon>animals.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\animals.min.js">
+      <DependentUpon>animals.ts</DependentUpon>
+    </Content>
+    <Content Include="ts_animals.html" />
+    <Content Include="ts_greeter.html" />
     <Content Include="Index.html" />
     <Content Include="Scripts\duck_typing.js" />
+    <TypeScriptCompile Include="Scripts\greeter.ts" />
+    <Content Include="Scripts\greeter.js">
+      <DependentUpon>greeter.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\greeter.min.js">
+      <DependentUpon>greeter.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\object_hashes.js" />
     <Content Include="Scripts\arrays.js" />
     <Content Include="Scripts\crazy_AND.js" />
